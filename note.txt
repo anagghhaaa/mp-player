@@ -1,0 +1,24 @@
+        Media Player
+      ================  
+
+React front-end , jsonserver backend
+ . Add utube videos
+ . View added utubevideos
+ . Add categories
+
+
+
+ *)  React bootstrap
+    ------------------
+ .To insatll - "npm i react-bootstrap bootstrap"
+
+ ===>) CREATE JSON SERVER [watch :- 24/08 Last 30mints ]
+    ===========================================
+ . create a folder in project5 named mp-server
+ . aa foldernte path nn cmd edkka then type->" npm init -y  "  -> enter -> a package file will install .
+ . then type " npm i json-server"
+ . then "code ."
+ . create a file named "index.js"
+ . create a file named "db.json" this is the resource file
+ .  if run cheyumpo error vanal terminalil ngane  " npm i json-server@0.17.0 "typeyya so latest  version install aavm.
+ . then type "node index.js" to run the code after that take browser "localhost/3000"
