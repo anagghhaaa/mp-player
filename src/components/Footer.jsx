@@ -26,7 +26,7 @@ function Footer() {
             <button className='btn btn-primary mt-3'>Send</button>
           </Col>
         </Row>
-        <h6 className='text-center'>Media Player 2024 @ all rights reserved</h6>
+        <h6 className='text-center'>Media Player 2024 &copy; all rights reserved</h6>
       </div>
     </>
   )

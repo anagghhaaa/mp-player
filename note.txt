@@ -5,12 +5,14 @@ React front-end , jsonserver backend
  . Add utube videos
  . View added utubevideos
  . Add categories
-
+ . 
 
 
  *)  React bootstrap
     ------------------
- .To insatll - "npm i react-bootstrap bootstrap"
+ . To insatll - "npm i react-bootstrap bootstrap" 
+ . "bootswatch.com" - for bg theme dwnld "bootstarp .min.css" and copy paste into your prject folder.
+
 
  ===>) CREATE JSON SERVER [watch :- 24/08 Last 30mints ]
     ===========================================
@@ -18,7 +20,46 @@ React front-end , jsonserver backend
  . aa foldernte path nn cmd edkka then type->" npm init -y  "  -> enter -> a package file will install .
  . then type " npm i json-server"
  . then "code ."
- . create a file named "index.js"
- . create a file named "db.json" this is the resource file
+ . create a file named "index.js" then type:-
+  1. const jsonServer=require('json-server')
+
+     const movieserver=jsonServer.create()
+
+ 2. const middleware=jsonServer.defaults()
+    const router=jsonServer.router('db.json')
+
+  3. movieserver.use(middleware);
+     movieserver.use(router)
+
+     const PORT=3000 || process.env.PORT  [// when 3000 nn illath vre server nn vendi use cheythtt ndengii ath clear cheyth ippozhthe server run cheyyan vendeet aahn "|| process.env.PORT"                    
+        kodukkunnath]
+
+
+  4. movieserver.listen(PORT,()=>{
+    console.log("Server Running at:" +PORT);
+    
+})     
+
+
+ . create a file named "db.json" this is the resource file 
  .  if run cheyumpo error vanal terminalil ngane  " npm i json-server@0.17.0 "typeyya so latest  version install aavm.
  . then type "node index.js" to run the code after that take browser "localhost/3000"
+
+  ==>)   state lifting
+      ------------------
+ . Technique for passing data from chil to parent componemt
+
+ ==>)     session storage and local storage
+        ------------------------------------
+  . both are mostly similar storages provided by browser 
+  . can store data in string format specifically in both 
+  . local storage data remains there if it is not cleared but ,session storage data get removed automatically after
+      a specific amoiunt of time 
+  . data storage and access are similar in implementation in the case of both 
+  . local storage &  session storage are the predefined js objects that are used for handling both storages 
+
+   *)    LOCAL STORAGE:-
+      . 
+        
+   *)    SESSION STORAGE :-
+     dashboard->new->webservice->select repositry->connect-> scroll down - instance-free->scroll down- deploy webservice->
